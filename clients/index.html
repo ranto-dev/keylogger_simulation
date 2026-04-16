@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Espace Client Sécurisé</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="login-card">
+        <h2>Formulaire de connexion</h2>
+        <form id="loginForm" onsubmit="handleFormSubmit(event)">
+            <label for="user">identifiant</label>
+            <input type="text" id="user" placeholder="entrer votre identifiant" required>
+            <label for="pass">mot de passe</label>
+            <input type="password" id="pass" placeholder="Mot de passe" required>
+            <button type="submit">Se connecter</button>
+        </form>
+    </div>
+
+    <div id="modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3 id="modalTitle"></h3>
+            <p id="modalBody"></p>
+            <button id="close" onclick="closeModal()">Fermer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
